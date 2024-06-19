@@ -1,0 +1,37 @@
+/* START ABOUT SECTION */
+@media (0px <=width <=991px) {
+
+    #about figure {
+        border: none !important;
+    }
+
+    #about figure img,
+    #about .profile-layer {
+        bottom: 0 !important;
+        left: 0 !important;
+        width: 100%;
+    }
+}
+/* END ABOUT SECTION */
+
+/* START TESTIMONIAL SECTION */
+@media (0px <=width <=767px) {
+
+    #testimonial .item {
+        display: inline-block;
+    }
+
+    #testimonial figure {
+        text-align: center;
+    }
+}
+/* END TESTIMONIAL SECTION */
+
+/* START BLOG SECTION */
+@media (0px <=width <=767px) {
+
+    #blog .card {
+        margin-bottom: 2rem;
+    }
+}
+/* END BLOG SECTION */
