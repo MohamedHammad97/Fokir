@@ -11,6 +11,10 @@
         left: 0 !important;
         width: 100%;
     }
+
+    #about button {
+        margin-bottom: 1rem;
+    }
 }
 /* END ABOUT SECTION */
 

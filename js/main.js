@@ -35,21 +35,23 @@ $(document).ready(function () {
     })
 })
 
-let { top: projectCount } = $("#projectCount").offset()
-$(window).scroll(function () {
-    let windowOffset = $(window).scrollTop()
-    if (windowOffset > projectCount - 200) {
-        let valueDisplays = document.querySelectorAll('.counter')
-        valueDisplays.forEach((valueDisplay) => {
-            let startValue = 0
-            let endValue = parseInt(valueDisplay.getAttribute("data-target"));
-            let counter = setInterval(() => {
-                startValue++;
-                valueDisplay.textContent = startValue
-                if (startValue == endValue) {
-                    clearInterval(counter)
-                }
-            }, 10)
-        })
-    }
-})
+// let { top: projectCount } = $("#projectCount").offset()
+// $(window).scroll(function () {
+//     let windowOffset = $(window).scrollTop()
+//     if (windowOffset > projectCount - 200) {
+//         let valueDisplays = document.querySelectorAll('.counter')
+//         valueDisplays.forEach((valueDisplay) => {
+//             let startValue = 0
+//             let endValue = parseInt(valueDisplay.getAttribute("data-target"));
+//             let counter = setInterval(() => {
+//                 startValue++;
+//                 valueDisplay.textContent = startValue
+//                 if (startValue == endValue) {
+//                     clearInterval(counter)
+//                 }
+//             }, 10)
+//         })
+//     }
+// })
+
+$('.count').counterUp()
